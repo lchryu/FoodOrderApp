@@ -1,0 +1,366 @@
+Index: app/src/main/res/drawable/ic_launcher_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:width=\"108dp\"\r\n    android:height=\"108dp\"\r\n    android:viewportWidth=\"108\"\r\n    android:viewportHeight=\"108\">\r\n    <path\r\n        android:fillColor=\"#3DDC84\"\r\n        android:pathData=\"M0,0h108v108h-108z\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M9,0L9,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,0L19,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M29,0L29,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M39,0L39,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M49,0L49,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M59,0L59,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M69,0L69,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M79,0L79,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M89,0L89,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M99,0L99,108\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,9L108,9\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,19L108,19\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,29L108,29\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,39L108,39\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,49L108,49\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,59L108,59\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,69L108,69\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,79L108,79\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,89L108,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M0,99L108,99\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,29L89,29\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,39L89,39\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,49L89,49\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,59L89,59\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,69L89,69\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M19,79L89,79\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M29,19L29,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M39,19L39,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M49,19L49,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M59,19L59,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M69,19L69,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n    <path\r\n        android:fillColor=\"#00000000\"\r\n        android:pathData=\"M79,19L79,89\"\r\n        android:strokeWidth=\"0.8\"\r\n        android:strokeColor=\"#33FFFFFF\" />\r\n</vector>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_launcher_background.xml b/app/src/main/res/drawable/ic_launcher_background.xml
+--- a/app/src/main/res/drawable/ic_launcher_background.xml	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
++++ b/app/src/main/res/drawable/ic_launcher_background.xml	(date 1687455907911)
+@@ -1,170 +1,74 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<vector xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:width="108dp"
++<vector
+     android:height="108dp"
++    android:width="108dp"
++    android:viewportHeight="108"
+     android:viewportWidth="108"
+-    android:viewportHeight="108">
+-    <path
+-        android:fillColor="#3DDC84"
+-        android:pathData="M0,0h108v108h-108z" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M9,0L9,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,0L19,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M29,0L29,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M39,0L39,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M49,0L49,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M59,0L59,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M69,0L69,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M79,0L79,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M89,0L89,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M99,0L99,108"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,9L108,9"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,19L108,19"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,29L108,29"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,39L108,39"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,49L108,49"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,59L108,59"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,69L108,69"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,79L108,79"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,89L108,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M0,99L108,99"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,29L89,29"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,39L89,39"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,49L89,49"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,59L89,59"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,69L89,69"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M19,79L89,79"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M29,19L29,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M39,19L39,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M49,19L49,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M59,19L59,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M69,19L69,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
+-    <path
+-        android:fillColor="#00000000"
+-        android:pathData="M79,19L79,89"
+-        android:strokeWidth="0.8"
+-        android:strokeColor="#33FFFFFF" />
++    xmlns:android="http://schemas.android.com/apk/res/android">
++    <path android:fillColor="#3DDC84"
++          android:pathData="M0,0h108v108h-108z"/>
++    <path android:fillColor="#00000000" android:pathData="M9,0L9,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,0L19,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M29,0L29,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M39,0L39,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M49,0L49,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M59,0L59,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M69,0L69,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M79,0L79,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M89,0L89,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M99,0L99,108"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,9L108,9"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,19L108,19"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,29L108,29"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,39L108,39"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,49L108,49"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,59L108,59"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,69L108,69"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,79L108,79"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,89L108,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M0,99L108,99"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,29L89,29"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,39L89,39"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,49L89,49"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,59L89,59"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,69L89,69"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M19,79L89,79"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M29,19L29,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M39,19L39,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M49,19L49,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M59,19L59,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M69,19L69,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
++    <path android:fillColor="#00000000" android:pathData="M79,19L79,89"
++          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+ </vector>
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\"\r\n    android:background=\"@color/my_primary\"\r\n    >\r\n\r\n    <RelativeLayout\r\n        android:paddingTop=\"16dp\"\r\n        android:paddingHorizontal=\"16dp\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:id=\"@+id/title_bar_layout\">\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:id=\"@+id/page_title\"\r\n            android:text=\"List Food\"\r\n            android:textSize=\"32sp\"\r\n            android:textColor=\"@color/white\"\r\n            android:textStyle=\"bold\"/>\r\n\r\n        <ImageButton\r\n            android:id=\"@+id/menu_btn\"\r\n            android:layout_width=\"48dp\"\r\n            android:layout_height=\"48dp\"\r\n            android:layout_alignParentEnd=\"true\"\r\n            android:layout_centerVertical=\"true\"\r\n            android:background=\"?attr/selectableItemBackgroundBorderless\"\r\n            android:src=\"@drawable/ic_baseline_menu_24\"\r\n            app:tint=\"@color/white\"\r\n            tools:ignore=\"SpeakableTextPresentCheck\" />\r\n\r\n    </RelativeLayout>\r\n    <androidx.recyclerview.widget.RecyclerView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:id=\"@+id/rcvFood\"\r\n        android:layout_below=\"@id/title_bar_layout\"\r\n        />\r\n    <com.google.android.material.floatingactionbutton.FloatingActionButton\r\n        android:id=\"@+id/floatingBtn\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:src=\"@drawable/ic_baseline_add_shopping_cart_24\"\r\n        android:layout_alignParentBottom=\"true\"\r\n        android:layout_alignParentEnd=\"true\"\r\n        android:layout_margin=\"16dp\"\r\n        android:backgroundTint=\"@color/white\"/>\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1687452217260)
+@@ -41,13 +41,17 @@
+         android:id="@+id/rcvFood"
+         android:layout_below="@id/title_bar_layout"
+         />
++
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/floatingBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+-        android:layout_alignParentBottom="true"
+         android:layout_alignParentEnd="true"
+-        android:layout_margin="16dp"
+-        android:backgroundTint="@color/white"/>
++        android:layout_alignParentBottom="true"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="16dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginBottom="16dp"
++        android:backgroundTint="@color/white"
++        android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+ </RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/item_food.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.cardview.widget.CardView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:layout_margin=\"5dp\"\r\n    app:cardBackgroundColor=\"@color/white\"\r\n    app:cardCornerRadius=\"8dp\"\r\n    app:cardElevation=\"8dp\"\r\n    app:cardMaxElevation=\"10dp\"\r\n    app:cardPreventCornerOverlap=\"true\"\r\n    app:cardUseCompatPadding=\"true\">\r\n\r\n\r\n    <RelativeLayout\r\n        android:id=\"@+id/relativelayout\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"275dp\">\r\n\r\n        <ImageView\r\n            android:id=\"@+id/imgFood\"\r\n            android:layout_width=\"150dp\"\r\n            android:layout_height=\"150dp\"\r\n            android:layout_marginStart=\"10dp\"\r\n            android:layout_marginTop=\"10dp\"\r\n            android:layout_marginEnd=\"10dp\"\r\n            android:layout_marginBottom=\"10dp\"\r\n            android:contentDescription=\"@string/app_name\"\r\n            android:padding=\"5dp\"\r\n            android:scaleType=\"centerCrop\"\r\n            android:src=\"@drawable/burger\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/tvName\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"10dp\"\r\n            android:layout_marginTop=\"10dp\"\r\n            android:layout_below=\"@id/imgFood\"\r\n            android:text=\"Humberger\"\r\n            android:gravity=\"center\"\r\n            android:textColor=\"@color/black\"\r\n            android:textSize=\"18sp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/tvPrice\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_below=\"@id/tvName\"\r\n            android:layout_marginStart=\"10dp\"\r\n            android:layout_marginTop=\"10dp\"\r\n            android:layout_alignStart=\"@id/imgFood\"\r\n            android:drawablePadding=\"2dp\"\r\n            android:text=\"50000\"\r\n            app:drawableStartCompat=\"@drawable/bitcoin_24\" />\r\n\r\n        <ImageView\r\n            android:id=\"@+id/imvAdd\"\r\n            android:layout_width=\"24dp\"\r\n            android:layout_height=\"24dp\"\r\n            android:layout_below=\"@id/tvPrice\"\r\n            android:layout_alignParentEnd=\"true\"\r\n            android:layout_marginStart=\"10dp\"\r\n            android:layout_marginTop=\"5dp\"\r\n            android:drawablePadding=\"2dp\"\r\n            android:tooltipText=\"add\"\r\n            android:src=\"@drawable/add_24\"\r\n            android:layout_marginEnd=\"10dp\"\r\n            />\r\n    </RelativeLayout>\r\n</androidx.cardview.widget.CardView>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/item_food.xml b/app/src/main/res/layout/item_food.xml
+--- a/app/src/main/res/layout/item_food.xml	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
++++ b/app/src/main/res/layout/item_food.xml	(date 1687446583906)
+@@ -3,7 +3,7 @@
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+-    android:layout_margin="5dp"
++    android:layout_margin="0dp"
+     app:cardBackgroundColor="@color/white"
+     app:cardCornerRadius="8dp"
+     app:cardElevation="8dp"
+@@ -57,8 +57,8 @@
+ 
+         <ImageView
+             android:id="@+id/imvAdd"
+-            android:layout_width="24dp"
+-            android:layout_height="24dp"
++            android:layout_width="32dp"
++            android:layout_height="32dp"
+             android:layout_below="@id/tvPrice"
+             android:layout_alignParentEnd="true"
+             android:layout_marginStart="10dp"
+Index: app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml b/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml
+deleted file mode 100644
+--- a/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
++++ /dev/null	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background" />
+-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+-    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+-</adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\">\r\n    <background android:drawable=\"@drawable/ic_launcher_background\" />\r\n    <foreground android:drawable=\"@drawable/ic_launcher_foreground\" />\r\n</adaptive-icon>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml b/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+--- a/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
++++ b/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1687455907914)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background" />
+-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++    <background android:drawable="@drawable/ic_launcher_background"/>
++    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+ </adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\">\r\n    <background android:drawable=\"@drawable/ic_launcher_background\" />\r\n    <foreground android:drawable=\"@drawable/ic_launcher_foreground\" />\r\n</adaptive-icon>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml b/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+--- a/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(revision 5dbaa6df6c3f29f283085da1c54ea068ecf05da6)
++++ b/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1687455907947)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+-    <background android:drawable="@drawable/ic_launcher_background" />
+-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++    <background android:drawable="@drawable/ic_launcher_background"/>
++    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+ </adaptive-icon>
+\ No newline at end of file
