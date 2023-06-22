@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -21,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText emailEditText, passwordEditText;
     Button loginBtn;
     ProgressBar progressBar;
-    TextView createAccountBtnTextView;
+    TextView createAccountBtnTextView,forgotPasswordBtnTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,11 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.login_btn);
         progressBar = findViewById(R.id.progress_bar);
         createAccountBtnTextView = findViewById(R.id.create_account_text_view_btn);
+        forgotPasswordBtnTextView = findViewById(R.id.forgot_password_text_view_btn);
 
         loginBtn.setOnClickListener(v->loginUser());
         createAccountBtnTextView.setOnClickListener(v->startActivity(new Intent(LoginActivity.this, CreateAccountActivity.class)));
+        forgotPasswordBtnTextView.setOnClickListener(v->onClickForgotPassword());
     }
 
     private void loginUser() {
@@ -46,6 +49,21 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         loginAccountInFirebase(email, password);
+    }
+
+    public void onClickForgotPassword()
+    {
+        String email = emailEditText.getText().toString();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful())
+                {
+                    Toast.makeText(LoginActivity.this, "Email sent", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     private void loginAccountInFirebase(String email, String password) {
