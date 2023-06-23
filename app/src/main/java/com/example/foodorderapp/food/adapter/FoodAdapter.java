@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.Utility;
 import com.example.foodorderapp.food.model.Food;
 import com.example.foodorderapp.food.model.FoodRepository;
 
@@ -53,11 +54,18 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         });
     }
     private void addButtonClick(View view, Food food) {
-        FoodRepository.addFood(food);
-        for (int i = 0; i < FoodRepository.getFoodList().size(); i++) {
-            System.out.println(FoodRepository.getFoodList().get(i).getName());
+        boolean checkAdd = FoodRepository.addFood(food);
+        if (checkAdd) {
+            Utility.ShowToast(mContext, "Thêm vào giỏ hàng thành công");
+        } else {
+            Utility.ShowToast(mContext, "Đã tồn tại trong giỏ hàng");
         }
-        System.out.println("------------------------------");
+
+        // in ra console phục vụ debug
+        for (int i = 0; i < FoodRepository.getFoodList().size(); i++) {
+            System.out.println("FoodRepository.getFoodList[" + i + "] = " + FoodRepository.getFoodList().get(i).getName());
+        }
+        System.out.println("--------------------------------------------------");
         Toast.makeText(mContext, "cart.size = " + FoodRepository.getFoodList().size(), Toast.LENGTH_SHORT).show();
     }
 
@@ -77,9 +85,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         public FoodViewHolder(@NonNull View itemView) {
             super(itemView);
             imgFood = itemView.findViewById(R.id.imgFood);
-            tvName = itemView.findViewById(R.id.tvName);
+            tvName  = itemView.findViewById(R.id.tvName);
             tvPrice = itemView.findViewById(R.id.tvPrice);
-            imvAdd = itemView.findViewById(R.id.imvAdd);
+            imvAdd  = itemView.findViewById(R.id.imvAdd);
         }
     }
 }

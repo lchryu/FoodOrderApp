@@ -14,6 +14,7 @@ import com.example.foodorderapp.R;
 import com.example.foodorderapp.cart.CartActivity;
 import com.example.foodorderapp.cart.model.CartDAO;
 import com.example.foodorderapp.cart.model.CartItem;
+import com.example.foodorderapp.food.model.FoodRepository;
 
 import java.util.List;
 
@@ -64,6 +65,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
                 CartDAO.removeFromCart(cartItem);
                 holder.tvQuantity.setText(String.valueOf(cartItem.getQuantity()));
                 holder.tvTotalPrice.setText(String.valueOf(cartItem.getTotalPrice()));
+                /*
+                 * khi thêm thì các food trong giỏ hàng không thay đổi
+                 * nhưng khi xoá nếu qantity giảm về 0 sẽ bị xoá ra khỏi giỏ hàng
+                 * (mCartItems thay đổi)--> phải gọi notify*/
+                notifyDataSetChanged();
                 ((CartActivity)mContext).updateCartTotalPrice();
             }
         });

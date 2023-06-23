@@ -64,6 +64,7 @@ public class CartDAO {
                 // Tìm thấy món ăn trong giỏ hàng, kiểm tra nếu quantity <= 1 thì xóa khỏi giỏ hàng, ngược lại giảm quantity xuống 1
                 if (item.getQuantity() <= 1) {
                     listCartItem.remove(item);
+                    FoodRepository.removeFood(cartItem.getFood()); // đồng thời xoá item khỏi FoodRepository do quantity < 0
                 } else {
                     item.setQuantity(item.getQuantity() - 1);
                 }

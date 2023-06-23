@@ -1,5 +1,8 @@
 package com.example.foodorderapp.food.model;
 
+import android.widget.Toast;
+
+import com.example.foodorderapp.Utility;
 import com.example.foodorderapp.cart.model.CartDAO;
 
 import java.util.ArrayList;
@@ -25,12 +28,23 @@ public class FoodRepository {
         FoodRepository.foodList = foodList;
     }
 
-    public static void addFood(Food f) {
+    public static boolean addFood(Food f) {
         if (!foodList.contains(f)) {
             foodList.add(f);
             CartDAO.updateCartItems(f);
+            System.out.println("đã thêm vào giỏ hàng");
+            return true;
+        }
+        else {
+            System.out.println("Đã tồn tại");
+            return false;
         }
     }
+    public static void removeFood(Food f) {
+        foodList.remove(f);
+//        CartDAO.removeCartItem(f);
+    }
+
 
     public static Food getFood(Integer id) {
         for (Food f : foodList) {

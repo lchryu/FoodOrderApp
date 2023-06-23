@@ -117,5 +117,6 @@ public class CartActivity extends AppCompatActivity {
     public void updateCartTotalPrice() {
         tvCartTotalPrice.setText(String.valueOf(CartDAO.getTotalPrice()));
         tvTax.setText(CartDAO.formatPrice(CartDAO.getTax()));
+
     }
 }
