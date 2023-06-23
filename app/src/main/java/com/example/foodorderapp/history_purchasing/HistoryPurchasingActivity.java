@@ -5,9 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
+import com.example.foodorderapp.LoginActivity;
+import com.example.foodorderapp.MainActivity;
 import com.example.foodorderapp.R;
 import com.example.foodorderapp.Utility;
 import com.example.foodorderapp.cart.CartActivity;
@@ -15,6 +21,7 @@ import com.example.foodorderapp.cart.model.Cart;
 import com.example.foodorderapp.history_purchasing.adapter.HistoryPurchasingAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -30,19 +37,19 @@ public class HistoryPurchasingActivity extends AppCompatActivity {
     RecyclerView rcvHistoryPurchasing;
     HistoryPurchasingAdapter historyPurchasingAdapter;
     List<Cart> listCart;
+    ImageView menuBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history_purchasing);
 
-
-        // code  new
         listCart = new ArrayList<>();
         rcvHistoryPurchasing = findViewById(R.id.rcvHistoryPurchasing);
-
         historyPurchasingAdapter = new HistoryPurchasingAdapter(this);
 
+        menuBtn = findViewById(R.id.menu_btn);
+        menuBtn.setOnClickListener(v->showMenu());
 
         getListCart();
 
@@ -76,6 +83,23 @@ public class HistoryPurchasingActivity extends AppCompatActivity {
                 historyPurchasingAdapter.setData(listCart);
             } else {
                 Utility.ShowToast(HistoryPurchasingActivity.this, "Lỗi khi lấy dữ liệu từ Firebase");
+            }
+        });
+    }
+    private void showMenu() {
+        PopupMenu popupMenu = new PopupMenu(HistoryPurchasingActivity.this, menuBtn);
+        popupMenu.getMenu().add("Logout");
+        popupMenu.show();
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                if (menuItem.getTitle()=="Logout") {
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(HistoryPurchasingActivity.this, LoginActivity.class));
+                    finish();
+                    return true;
+                }
+                return false;
             }
         });
     }

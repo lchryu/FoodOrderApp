@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     private void showMenu() {
         PopupMenu popupMenu = new PopupMenu(MainActivity.this, menuBtn);
         popupMenu.getMenu().add("Logout");
-        popupMenu.getMenu().add("User Purchasing");
+        popupMenu.getMenu().add("History Purchasing");
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     return true;
                 }
-                if(menuItem.getTitle()=="User Purchasing") {
+                if(menuItem.getTitle()=="History Purchasing") {
                     startActivity(new Intent(MainActivity.this, HistoryPurchasingActivity.class));
                     return true;
                 }
