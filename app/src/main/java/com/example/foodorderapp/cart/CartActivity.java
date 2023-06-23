@@ -45,6 +45,10 @@ public class CartActivity extends AppCompatActivity {
         btnPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (CartDAO.getCartItems().size() == 0) {
+                    Utility.ShowToast(CartActivity.this, "Bạn chưa mua bất kỳ sản phẩm nào!");
+                    return;
+                }
                 Toast.makeText(CartActivity.this, "Bạn đã thanh toán " + CartDAO.formatPrice(CartDAO.finalPrice()), Toast.LENGTH_SHORT).show();
                 SaveOrder();
             }
@@ -117,6 +121,5 @@ public class CartActivity extends AppCompatActivity {
     public void updateCartTotalPrice() {
         tvCartTotalPrice.setText(String.valueOf(CartDAO.getTotalPrice()));
         tvTax.setText(CartDAO.formatPrice(CartDAO.getTax()));
-
     }
 }
