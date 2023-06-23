@@ -18,8 +18,10 @@ public class Utility {
     public static CollectionReference getCollectionReferenceForCarts() {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
-            return FirebaseFirestore.getInstance().collection("carts")
-                    .document(currentUser.getUid()).collection("my_cart");
+            return FirebaseFirestore.getInstance()
+                    .collection("carts")
+                    .document(currentUser.getUid()).
+                    collection("my_cart");
         }
         return null;
     }

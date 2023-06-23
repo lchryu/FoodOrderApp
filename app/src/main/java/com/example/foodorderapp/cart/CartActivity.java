@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.food.model.FoodRepository;
 import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.cart.adapter.CartAdapter;
 import com.example.foodorderapp.cart.model.Cart;
@@ -33,6 +34,7 @@ public class CartActivity extends AppCompatActivity {
     private TextView tvCartTotalPrice;
     private TextView tvTax;
     private Button btnPay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +57,6 @@ public class CartActivity extends AppCompatActivity {
         });
 
         rcvCart.setLayoutManager(new LinearLayoutManager(this));
-
-
 
 
         // adapter
@@ -86,6 +86,7 @@ public class CartActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Utility.ShowToast(CartActivity.this, "Dữ liệu đã được lưu vào firebase");
                     CartDAO.clearCart();
+                    FoodRepository.getFoodList().clear();
                     finish();
                 } else {
                     Utility.ShowToast(CartActivity.this, "saveOrderToFirebase(Cart cart) đang không hoạt động");
@@ -107,6 +108,7 @@ public class CartActivity extends AppCompatActivity {
         }
         return cartItems;
     }
+
     private List<CartItem> convertFoodListToCartItems(Map<Food, Integer> cartList) {
         // Convert CartDAO cartList to List<CartItem>
         List<CartItem> cartItems = new ArrayList<>();
@@ -118,6 +120,7 @@ public class CartActivity extends AppCompatActivity {
         }
         return cartItems;
     }
+
     public void updateCartTotalPrice() {
         tvCartTotalPrice.setText(String.valueOf(CartDAO.getTotalPrice()));
         tvTax.setText(CartDAO.formatPrice(CartDAO.getTax()));

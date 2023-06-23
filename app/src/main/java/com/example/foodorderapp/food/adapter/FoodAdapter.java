@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
@@ -51,6 +52,12 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
                 addButtonClick(view, food);
             }
         });
+        holder.layout_item_food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Utility.ShowToast(mContext, "Detail . . .");
+            }
+        });
     }
     private void addButtonClick(View view, Food food) {
         boolean checkAdd = FoodRepository.addFood(food);
@@ -81,12 +88,14 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         private TextView tvName;
         private TextView tvPrice;
         private ImageView imvAdd;
+        private CardView layout_item_food;
         public FoodViewHolder(@NonNull View itemView) {
             super(itemView);
             imgFood = itemView.findViewById(R.id.imgFood);
             tvName  = itemView.findViewById(R.id.tvName);
             tvPrice = itemView.findViewById(R.id.tvPrice);
             imvAdd  = itemView.findViewById(R.id.imvAdd);
+            layout_item_food = itemView.findViewById(R.id.layout_item_food);
         }
     }
 }
