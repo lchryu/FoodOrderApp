@@ -100,12 +100,19 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Food> getListFood() {
         List<Food>lstFood = new ArrayList<>();
-        lstFood.add(new Food(1,  "Burger", 50000, R.drawable.burger));
-        lstFood.add(new Food(2,  "Ice cream", 20000, R.drawable.ice_cream));
-        lstFood.add(new Food(3,  "Pasta", 75000, R.drawable.pasta));
-        lstFood.add(new Food(4,  "Pizza", 80000, R.drawable.pizza));
-        lstFood.add(new Food(5,  "Sushi", 100000, R.drawable.sushi));
-        lstFood.add(new Food(6,  "Co ca cola", 20000, R.drawable.coca));
+//        lstFood.add(new Food(1,  "Burger", 50000, R.drawable.burger));
+//        lstFood.add(new Food(2,  "Ice cream", 20000, R.drawable.ice_cream));
+//        lstFood.add(new Food(3,  "Pasta", 75000, R.drawable.pasta));
+//        lstFood.add(new Food(4,  "Pizza", 80000, R.drawable.pizza));
+//        lstFood.add(new Food(5,  "Sushi", 100000, R.drawable.sushi));
+//        lstFood.add(new Food(6,  "Co ca cola", 20000, R.drawable.coca));
+        lstFood.add(new Food(1, "Burger", 50000, R.drawable.burger, "Bánh mì kẹp thịt bò ngon miệng được phủ lên các loại rau tươi và pho mát tan chảy, được đựng trong 1 chiếc bánh mì mềm."));
+        lstFood.add(new Food(2, "Kem", 20000, R.drawable.ice_cream, "Kem mịn và đậm đà với nhiều hương vị và topping khác nhau."));
+        lstFood.add(new Food(3, "Pasta", 75000, R.drawable.pasta, "Mì ý chín vừa, được nấu cùng một số sốt đậm đà, các loại gia vị và topping tuỳ chọn."));
+        lstFood.add(new Food(4, "Pizza", 80000, R.drawable.pizza, "Pizza Ý truyền thống với lớp vỏ giòn tan, phủ đầy pho mát, sốt cà chua và nhiều loại topping khác nhau."));
+        lstFood.add(new Food(5, "Sushi", 100000, R.drawable.sushi, "Những cuộn sushi nhỏ gọn và tinh tế, gồm cơm trộn giấm kèm theo hải sản, rau sống hoặc các thành phần khác."));
+        lstFood.add(new Food(6, "Coca-Cola", 20000, R.drawable.coca, "Đồ uống có gas thơm ngon với hỗn hợp độc đáo của nhiều hương vị, rất thích hợp để giải khát."));
+
 
         return lstFood;
     }

@@ -1,6 +1,8 @@
 package com.example.foodorderapp.food.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.food.activity.FoodDetailActivity;
 import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.food.model.Food;
 import com.example.foodorderapp.food.model.FoodRepository;
@@ -55,7 +58,11 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         holder.layout_item_food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Utility.ShowToast(mContext, "Detail . . .");
+                Intent intent = new Intent(mContext, FoodDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("food", food);
+                intent.putExtras(bundle);
+                mContext.startActivity(intent);
             }
         });
     }
