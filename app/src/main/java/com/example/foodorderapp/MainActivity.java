@@ -15,6 +15,7 @@ import android.widget.PopupMenu;
 import com.example.foodorderapp.cart.CartActivity;
 import com.example.foodorderapp.food.adapter.FoodAdapter;
 import com.example.foodorderapp.food.model.Food;
+import com.example.foodorderapp.food.model.FoodRepository;
 import com.example.foodorderapp.history_purchasing.HistoryPurchasingActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -62,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         btnFloating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (FoodRepository.getFoodList().size() == 0) {
+                    Utility.ShowToast(MainActivity.this, "Bạn chưa thêm bất cứ sản phẩm nào vào giỏ hàng!");
+                    return;
+                }
                 Intent intent = new Intent(MainActivity.this, CartActivity.class);
                 startActivity(intent);
             }
