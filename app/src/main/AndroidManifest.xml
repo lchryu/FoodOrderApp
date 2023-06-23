@@ -12,6 +12,9 @@
         android:theme="@style/Theme.FoodOrderApp"
         tools:targetApi="31">
         <activity
+            android:name=".account.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".history_purchasing.HistoryPurchasingActivity"
             android:exported="false" />
         <activity

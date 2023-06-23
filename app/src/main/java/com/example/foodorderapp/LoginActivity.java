@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.foodorderapp.account.ForgotPasswordActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -37,7 +38,8 @@ public class LoginActivity extends AppCompatActivity {
 
         loginBtn.setOnClickListener(v->loginUser());
         createAccountBtnTextView.setOnClickListener(v->startActivity(new Intent(LoginActivity.this, CreateAccountActivity.class)));
-        forgotPasswordBtnTextView.setOnClickListener(v->onClickForgotPassword());
+        forgotPasswordBtnTextView.setOnClickListener(v->startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class)));
+//        forgotPasswordBtnTextView.setOnClickListener(v->onClickForgotPassword());
     }
 
     private void loginUser() {
@@ -51,20 +53,20 @@ public class LoginActivity extends AppCompatActivity {
         loginAccountInFirebase(email, password);
     }
 
-    public void onClickForgotPassword()
-    {
-        String email = emailEditText.getText().toString();
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if(task.isSuccessful())
-                {
-                    Toast.makeText(LoginActivity.this, "Email sent", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
+//    public void onClickForgotPassword()
+//    {
+//        String email = emailEditText.getText().toString();
+//        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+//        firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+//            @Override
+//            public void onComplete(@NonNull Task<Void> task) {
+//                if(task.isSuccessful())
+//                {
+//                    Toast.makeText(LoginActivity.this, "Email sent", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
+//    }
 
     private void loginAccountInFirebase(String email, String password) {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
