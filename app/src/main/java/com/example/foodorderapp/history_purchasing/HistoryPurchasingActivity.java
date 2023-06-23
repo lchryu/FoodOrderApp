@@ -1,6 +1,5 @@
 package com.example.foodorderapp.history_purchasing;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,26 +11,19 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import com.example.foodorderapp.LoginActivity;
-import com.example.foodorderapp.MainActivity;
+import com.example.foodorderapp.account.LoginActivity;
 import com.example.foodorderapp.R;
-import com.example.foodorderapp.Utility;
-import com.example.foodorderapp.cart.CartActivity;
+import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.cart.model.Cart;
 import com.example.foodorderapp.history_purchasing.adapter.HistoryPurchasingAdapter;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
 public class HistoryPurchasingActivity extends AppCompatActivity {
     RecyclerView rcvHistoryPurchasing;

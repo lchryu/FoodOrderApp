@@ -1,8 +1,5 @@
 package com.example.foodorderapp.food.model;
 
-import android.widget.Toast;
-
-import com.example.foodorderapp.Utility;
 import com.example.foodorderapp.cart.model.CartDAO;
 
 import java.util.ArrayList;

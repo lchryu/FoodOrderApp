@@ -1,7 +1,6 @@
 package com.example.foodorderapp.food.adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
-import com.example.foodorderapp.Utility;
+import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.food.model.Food;
 import com.example.foodorderapp.food.model.FoodRepository;
 

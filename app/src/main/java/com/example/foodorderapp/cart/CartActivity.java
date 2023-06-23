@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.foodorderapp.R;
-import com.example.foodorderapp.Utility;
+import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.cart.adapter.CartAdapter;
 import com.example.foodorderapp.cart.model.Cart;
 import com.example.foodorderapp.cart.model.CartDAO;

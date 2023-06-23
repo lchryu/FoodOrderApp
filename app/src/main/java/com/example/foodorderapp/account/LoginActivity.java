@@ -1,4 +1,4 @@
-package com.example.foodorderapp;
+package com.example.foodorderapp.account;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.foodorderapp.account.ForgotPasswordActivity;
+import com.example.foodorderapp.MainActivity;
+import com.example.foodorderapp.R;
+import com.example.foodorderapp.utility.Utility;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

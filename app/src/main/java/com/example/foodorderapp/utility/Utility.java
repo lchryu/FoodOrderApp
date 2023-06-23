@@ -1,4 +1,4 @@
-package com.example.foodorderapp;
+package com.example.foodorderapp.utility;
 
 import android.content.Context;
 import android.widget.Toast;

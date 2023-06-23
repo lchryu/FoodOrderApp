@@ -1,4 +1,4 @@
-package com.example.foodorderapp;
+package com.example.foodorderapp.account;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
+import com.example.foodorderapp.MainActivity;
+import com.example.foodorderapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
