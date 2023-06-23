@@ -45,9 +45,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         }
         holder.imgFood.setImageResource(cartItem.getFood().getImgResource());
         holder.tvName.setText(cartItem.getFood().getName());
-        holder.tvPrice.setText(String.valueOf(cartItem.getFood().getPrice()));
+        holder.tvPrice.setText(CartDAO.formatPrice(cartItem.getFood().getPrice()));
         holder.tvQuantity.setText(String.valueOf(cartItem.getQuantity()));
-        holder.tvTotalPrice.setText(String.valueOf(cartItem.getTotalPrice()));
+        holder.tvTotalPrice.setText(CartDAO.formatPrice(cartItem.getTotalPrice()));
 
         holder.tvPlus.setOnClickListener(new View.OnClickListener() {
             @Override
