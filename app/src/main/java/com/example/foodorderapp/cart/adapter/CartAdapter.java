@@ -51,7 +51,6 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         holder.tvPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                CartDAO.updateCartItems(cartItem.getFood());
                 CartDAO.addToCart(cartItem);
                 holder.tvQuantity.setText(String.valueOf(cartItem.getQuantity()));
                 holder.tvTotalPrice.setText(String.valueOf(cartItem.getTotalPrice()));
