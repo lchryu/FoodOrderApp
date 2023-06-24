@@ -13,6 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.cart.model.CartDAO;
 import com.example.foodorderapp.history_purchasing.activity.HistoryPurchasingDetailActivity;
 import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.cart.model.Cart;
@@ -44,10 +45,10 @@ public class HistoryPurchasingAdapter extends RecyclerView.Adapter<HistoryPurcha
         if (cart == null) {
             return;
         }
-        holder.tvTotalPrice.setText(String.valueOf(getTotalCart(cart)));
+//        holder.tvTotalPrice.setText(String.valueOf(getTotalCart(cart)));
+        holder.tvTotalPrice.setText(CartDAO.formatPrice(getTotalCart(cart)));
         holder.tvItemCount.setText(String.valueOf(cart.listCartItem.size()));
         holder.tvTimestamp.setText(Utility.timestampToString(cart.timestamp));
-//        holder.cvHistoryPurchasing.setOnClickListener(v->mContext.startActivity(new Intent(mContext, HistoryPurchasingDetailActivity.class)));
         holder.cvHistoryPurchasing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

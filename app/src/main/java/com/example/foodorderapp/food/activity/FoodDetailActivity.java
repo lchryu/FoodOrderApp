@@ -58,6 +58,7 @@ public class FoodDetailActivity extends AppCompatActivity {
             System.out.println("FoodRepository.getFoodList[" + i + "] = " + FoodRepository.getFoodList().get(i).getName());
         }
         System.out.println("--------------------------------------------------");
-        Toast.makeText(FoodDetailActivity.this, "cart.size = " + FoodRepository.getFoodList().size(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(FoodDetailActivity.this, "cart.size = " + FoodRepository.getFoodList().size(), Toast.LENGTH_SHORT).show();
+        Utility.ShowToast(FoodDetailActivity.this, "Số món ăn trong giỏ hàng: " + FoodRepository.getFoodList().size());
     }
 }

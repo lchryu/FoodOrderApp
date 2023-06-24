@@ -23,17 +23,19 @@ import com.example.foodorderapp.food.model.FoodRepository;
 
 import java.util.List;
 
-public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder>{
+public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder> {
     private Context mContext;
     private List<Food> mListFood;
 
     public FoodAdapter(Context mContext) {
         this.mContext = mContext;
     }
-    public void setData(List<Food>list) {
+
+    public void setData(List<Food> list) {
         this.mListFood = list;
         notifyDataSetChanged();
     }
+
     @NonNull
     @Override
     public FoodViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -67,6 +69,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             }
         });
     }
+
     private void addButtonClick(View view, Food food) {
         boolean checkAdd = FoodRepository.addFood(food);
         if (checkAdd) {
@@ -80,7 +83,8 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             System.out.println("FoodRepository.getFoodList[" + i + "] = " + FoodRepository.getFoodList().get(i).getName());
         }
         System.out.println("--------------------------------------------------");
-        Toast.makeText(mContext, "cart.size = " + FoodRepository.getFoodList().size(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mContext, "cart.size = " + FoodRepository.getFoodList().size(), Toast.LENGTH_SHORT).show();
+        Utility.ShowToast(mContext, "Số món ăn trong giỏ hàng: " + FoodRepository.getFoodList().size());
     }
 
     @Override
@@ -97,12 +101,13 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         private TextView tvPrice;
         private ImageView imvAdd;
         private CardView layout_item_food;
+
         public FoodViewHolder(@NonNull View itemView) {
             super(itemView);
             imgFood = itemView.findViewById(R.id.imgFood);
-            tvName  = itemView.findViewById(R.id.tvName);
+            tvName = itemView.findViewById(R.id.tvName);
             tvPrice = itemView.findViewById(R.id.tvPrice);
-            imvAdd  = itemView.findViewById(R.id.imvAdd);
+            imvAdd = itemView.findViewById(R.id.imvAdd);
             layout_item_food = itemView.findViewById(R.id.layout_item_food);
         }
     }
