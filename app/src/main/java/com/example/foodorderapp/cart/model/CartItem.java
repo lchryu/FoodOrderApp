@@ -2,7 +2,9 @@ package com.example.foodorderapp.cart.model;
 
 import com.example.foodorderapp.food.model.Food;
 
-public class CartItem {
+import java.io.Serializable;
+
+public class CartItem implements Serializable {
     private Food food;
     private int quantity;
 

@@ -54,7 +54,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             public void onClick(View v) {
                 CartDAO.addToCart(cartItem);
                 holder.tvQuantity.setText(String.valueOf(cartItem.getQuantity()));
-                holder.tvTotalPrice.setText(String.valueOf(cartItem.getTotalPrice()));
+//                holder.tvTotalPrice.setText(String.valueOf(cartItem.getTotalPrice()));
+                holder.tvTotalPrice.setText(CartDAO.formatPrice(cartItem.getTotalPrice()));
                 ((CartActivity)mContext).updateCartTotalPrice();
             }
         });

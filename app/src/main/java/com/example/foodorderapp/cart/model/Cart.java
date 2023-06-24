@@ -2,9 +2,10 @@ package com.example.foodorderapp.cart.model;
 
 import com.google.firebase.Timestamp;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Cart {
+public class Cart implements Serializable {
     public List<CartItem> listCartItem;
     public Timestamp timestamp;
 

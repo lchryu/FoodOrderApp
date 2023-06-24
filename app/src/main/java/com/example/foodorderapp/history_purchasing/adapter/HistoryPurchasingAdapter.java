@@ -1,18 +1,23 @@
 package com.example.foodorderapp.history_purchasing.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.history_purchasing.activity.HistoryPurchasingDetailActivity;
 import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.cart.model.Cart;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HistoryPurchasingAdapter extends RecyclerView.Adapter<HistoryPurchasingAdapter.HistoryPurchasingViewHolder>{
@@ -42,6 +47,17 @@ public class HistoryPurchasingAdapter extends RecyclerView.Adapter<HistoryPurcha
         holder.tvTotalPrice.setText(String.valueOf(getTotalCart(cart)));
         holder.tvItemCount.setText(String.valueOf(cart.listCartItem.size()));
         holder.tvTimestamp.setText(Utility.timestampToString(cart.timestamp));
+//        holder.cvHistoryPurchasing.setOnClickListener(v->mContext.startActivity(new Intent(mContext, HistoryPurchasingDetailActivity.class)));
+        holder.cvHistoryPurchasing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, HistoryPurchasingDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("cartItems", new ArrayList<>(cart.getListCartItem()));
+                intent.putExtras(bundle);
+                mContext.startActivity(intent);
+            }
+        });
     }
     public int getTotalCart(Cart cart) {
         int sum = 0;
@@ -58,11 +74,13 @@ public class HistoryPurchasingAdapter extends RecyclerView.Adapter<HistoryPurcha
 
     public class HistoryPurchasingViewHolder extends RecyclerView.ViewHolder{
         private TextView tvItemCount, tvTimestamp, tvTotalPrice;
+        private CardView cvHistoryPurchasing;
         public HistoryPurchasingViewHolder(@NonNull View itemView) {
             super(itemView);
             tvItemCount = itemView.findViewById(R.id.tvItemCount);
             tvTimestamp = itemView.findViewById(R.id.tvTimestamp);
             tvTotalPrice = itemView.findViewById(R.id.tvTotalPrice);
+            cvHistoryPurchasing = itemView.findViewById(R.id.cvHistoryPurchasing);
         }
     }
 }

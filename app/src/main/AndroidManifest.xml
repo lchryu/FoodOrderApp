@@ -12,7 +12,7 @@
         android:theme="@style/Theme.FoodOrderApp"
         tools:targetApi="31">
         <activity
-            android:name=".HistoryPurchasingDetail"
+            android:name=".history_purchasing.activity.HistoryPurchasingDetailActivity"
             android:exported="false" />
         <activity
             android:name=".food.activity.FoodDetailActivity"

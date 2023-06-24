@@ -15,6 +15,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.cart.model.CartDAO;
 import com.example.foodorderapp.food.activity.FoodDetailActivity;
 import com.example.foodorderapp.utility.Utility;
 import com.example.foodorderapp.food.model.Food;
@@ -48,7 +49,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         }
         holder.imgFood.setImageResource(food.getImgResource());
         holder.tvName.setText(food.getName());
-        holder.tvPrice.setText(String.valueOf(food.getPrice()));
+        holder.tvPrice.setText(CartDAO.formatPrice(food.getPrice()));
         holder.imvAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
