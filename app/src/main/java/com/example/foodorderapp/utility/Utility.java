@@ -16,12 +16,14 @@ public class Utility {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
     public static CollectionReference getCollectionReferenceForCarts() {
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser currentUser = FirebaseAuth
+                                  .getInstance()
+                                  .getCurrentUser();
         if (currentUser != null) {
             return FirebaseFirestore.getInstance()
-                    .collection("carts")
-                    .document(currentUser.getUid()).
-                    collection("my_cart");
+                                    .collection("carts")
+                                    .document(currentUser.getUid())
+                                    .collection("my_cart");
         }
         return null;
     }

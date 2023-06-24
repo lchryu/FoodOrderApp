@@ -17,7 +17,7 @@ import com.example.foodorderapp.cart.CartActivity;
 import com.example.foodorderapp.food.adapter.FoodAdapter;
 import com.example.foodorderapp.food.model.Food;
 import com.example.foodorderapp.food.model.FoodRepository;
-import com.example.foodorderapp.history_purchasing.HistoryPurchasingActivity;
+import com.example.foodorderapp.history_purchasing.activity.HistoryPurchasingActivity;
 import com.example.foodorderapp.utility.Utility;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;

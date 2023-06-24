@@ -1,4 +1,4 @@
-package com.example.foodorderapp.history_purchasing;
+package com.example.foodorderapp.history_purchasing.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
