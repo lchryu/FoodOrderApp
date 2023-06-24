@@ -12,20 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginStart="7dp">
+        android:layout_margin="10dp">
 
+        <!-- Số lượng sản phẩm -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Count         = "
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@color/black" />
-            <!-- Số lượng sản phẩm -->
             <TextView
                 android:id="@+id/tvItemCount"
                 android:layout_width="wrap_content"
@@ -35,27 +34,25 @@
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
+        <!-- Tổng tiền -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total Price = "
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@color/black" />
-            <!-- Tổng tiền -->
             <TextView
                 android:id="@+id/tvTotalPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="150 000VND"
+                android:text="150 000 VND"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/black" />
         </LinearLayout>
-
 
         <!-- Timestamp -->
         <TextView
@@ -68,15 +65,14 @@
             android:textColor="@android:color/darker_gray"
             android:layout_marginEnd="7dp"/>
         <!-- Divider -->
-<!--        <View-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="1dp"-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:layout_marginBottom="8dp"-->
-<!--            android:background="@android:color/darker_gray" />-->
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:background="@android:color/darker_gray" />-->
 
         <!-- Rest of the item layout -->
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>

@@ -34,7 +34,6 @@
         android:layout_below="@id/food_name"
         android:layout_marginTop="8dp"
         android:text="Food Description"
-        android:textColor="@color/black"
         android:textSize="16sp" />
 
     <TextView
@@ -44,7 +43,8 @@
         android:layout_below="@id/food_description"
         android:layout_marginTop="8dp"
         android:text="Food Price"
-        android:textColor="@color/black"
+        android:textColor="@color/red"
+        android:gravity="right"
         android:textSize="16sp" />
 
     <Button
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/food_price"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="333dp"
         android:text="Add to Cart"
         android:textSize="16sp" />
 
