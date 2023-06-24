@@ -12,7 +12,6 @@
     app:cardUseCompatPadding="true"
     android:id="@+id/layout_item_food">
 
-
     <RelativeLayout
         android:id="@+id/relativelayout"
         android:layout_width="wrap_content"
@@ -52,21 +51,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_below="@+id/linearlayoutVertical">
-                <ImageView
-                    android:id="@+id/imgPriceIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/bitcoin_24"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="2dp" />
                 <TextView
                     android:id="@+id/tvPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="50000"
+                    android:text="50000 "
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="VND"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
             </LinearLayout>
+            
         </LinearLayout>
 
         <ImageView
